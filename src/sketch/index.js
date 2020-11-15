@@ -1,3 +1,5 @@
+export default function sketch(s) {
+
 var data;
 var virus = [];
 var virusModel;
@@ -8,15 +10,15 @@ var cols = 4;
 var rows = 4;
 var deutschland;
 
-function preload(){
+s.preload(){
   data = loadJSON("data2.json");
   virusModel = loadModel("virus.obj", true);
   myFont = loadFont("Helvetica.ttf");
   deutschland = loadImage("deutschland.jpg");
 }
 
-class Virus{
-  constructor(x, y, name, bev, infiziert, gestorben){
+s.Virus{
+  s.constructor(x, y, name, bev, infiziert, gestorben){
     this.r = infiziert/bev;
     
     this.startX = x;
@@ -30,34 +32,34 @@ class Virus{
     this.gestorben = gestorben;
   }
   
-  display(){
-    translate(this.x, this.y);
+  s.display(){
+    s.translate(this.x, this.y);
     
-    push();
-    scale(this.r * 25);
-    rotateX(frameCount * this.r);
-    rotateY(frameCount * this.r);
+    s.push();
+    s.scale(this.r * 25);
+    s.rotateX(frameCount * this.r);
+    s.rotateY(frameCount * this.r);
     
     var c = map(this.gestorben/this.bev, 0, 0.0002, 255, 40);
-    ambientMaterial(c, 0, 0);
-    noStroke();
-    model(this.model);
-    pop();
+    s.ambientMaterial(c, 0, 0);
+    s.noStroke();
+    s.model(this.model);
+    s.pop();
     
     if(highlight){
-      push();
-      textAlign(CENTER, CENTER);
-      textFont(myFont);
-      translate(0, 0, 10);
-      fill(c, 0, 0);
-      text(this.name, 0, this.r * 3000 + 5);
-      pop();
+      s.push();
+      s.textAlign(CENTER, CENTER);
+      s.textFont(myFont);
+      s.translate(0, 0, 10);
+      s.fill(c, 0, 0);
+      s.text(this.name, 0, this.r * 3000 + 5);
+      s.pop();
     }
-    translate(-this.x, -this.y);
+    s.translate(-this.x, -this.y);
   }
   
   
-  movement(){
+  s.movement(){
     var xspeed;
     var yspeed;
     var tempX = this.x;
@@ -82,8 +84,8 @@ class Virus{
   }
 }
 
-function setup() {
-  createCanvas(600, 600, WEBGL);
+s.setup() {
+  s.createCanvas(600, 600, s.WEBGL);
   
   //var count = Object.keys(data).length;
   //for(let i = 0; i < count; i++){
@@ -150,15 +152,15 @@ function setup() {
   virus[index] = new Virus(25, 20, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
 }
 
-function draw() {
-  background(200);
+s.draw() {
+  s.background(200);
   //image(deutschland, -300, -300, 600, 600);
   
   let locX = mouseX - height / 2;
   let locY = mouseY - width / 2;
 
-  ambientLight(100, 100, 100);
-  pointLight(255, 255, 255, locX, locY, 100);
+  s.ambientLight(100, 100, 100);
+  s.pointLight(255, 255, 255, locX, locY, 100);
   
   for(let j = 0; j < virus.length; j++){
     virus[j].movement();
@@ -166,10 +168,12 @@ function draw() {
   }  
 }
 
-function mousePressed(){
+s.mousePressed(){
   highlight = true;
 }
 
-function mouseReleased(){
+s.mouseReleased(){
   highlight = false;
+}
+    
 }
