@@ -1,0 +1,130 @@
+[
+  {
+  "ID": 1,
+  "Bundesland": "Baden-Würtemberg",
+  "Kuerzel": "BW",
+  "Einwohner": 10880000,
+  "Infektionen": 107649,
+  "Todesfälle": 2189
+},
+{
+  "ID": 2,
+  "Bundesland": "Bayern",
+  "Kuerzel": "BY",
+  "Einwohner": 12844000,
+  "Infektionen": 144705,
+  "Todesfälle": 3050
+},
+{
+  "ID": 3,
+  "Bundesland": "Berlin",
+  "Kuerzel": "BE",
+  "Einwohner": 3520000,
+  "Infektionen": 43146,
+  "Todesfälle": 321
+},
+{
+  "ID": 4,
+  "Bundesland": "Brandenburg",
+  "Kuerzel": "BB",
+  "Einwohner": 2485000,
+  "Infektionen": 11483,
+  "Todesfälle": 229
+},
+{
+  "ID": 5,
+  "Bundesland": "Bremen",
+  "Kuerzel": "HB",
+  "Einwohner": 671000,
+  "Infektionen": 7565,
+  "Todesfälle": 89
+},
+{
+  "ID": 6,
+  "Bundesland": "Hamburg",
+  "Kuerzel": "HH",
+  "Einwohner": 1787000,
+  "Infektionen": 18255,
+  "Todesfälle": 308
+},
+{
+  "ID": 7,
+  "Bundesland": "Hessen",
+  "Kuerzel": "HE",
+  "Einwohner": 6176000,
+  "Infektionen": 59371,
+  "Todesfälle": 821
+},
+{
+  "ID": 8,
+  "Bundesland": "Mecklenburg-Vorpommern",
+  "Kuerzel": "MV",
+  "Einwohner": 1612000,
+  "Infektionen": 3910,
+  "Todesfälle": 34
+},
+{
+  "ID": 9,
+  "Bundesland": "Niedersachsen",
+  "Kuerzel": "NI",
+  "Einwohner": 7927000,
+  "Infektionen": 50167,
+  "Todesfälle": 868
+},
+{
+  "ID": 10,
+  "Bundesland": "Nordrhein-Westfalen",
+  "Kuerzel": "NRW",
+  "Einwohner": 17865000,
+  "Infektionen": 185138,
+  "Todesfälle": 2517
+},
+{
+  "ID": 11,
+  "Bundesland": "Rheinland-Pfalz",
+  "Kuerzel": "RP",
+  "Einwohner": 4053000,
+  "Infektionen": 28958,
+  "Todesfälle": 342
+},
+{
+  "ID": 12,
+  "Bundesland": "Saarland",
+  "Kuerzel": "SL",
+  "Einwohner": 996000,
+  "Infektionen": 9276,
+  "Todesfälle": 207
+},
+{
+  "ID": 13,
+  "Bundesland": "Sachsen",
+  "Kuerzel": "SN",
+  "Einwohner": 4085000,
+  "Infektionen": 30100,
+  "Todesfälle": 458
+},
+{
+  "ID": 14,
+  "Bundesland": "Sachsen-Anhalt",
+  "Kuerzel": "ST",
+  "Einwohner": 2245000,
+  "Infektionen": 7367,
+  "Todesfälle": 102
+},
+{
+  "ID": 15,
+  "Bundesland": "Schleswig-Holstein",
+  "Kuerzel": "SH",
+  "Einwohner": 2859000,
+  "Infektionen": 10715,
+  "Todesfälle": 213
+},
+{
+  "ID": 16,
+  "Bundesland": "Thüringen",
+  "Kuerzel": "TH",
+  "Einwohner": 2171000,
+  "Infektionen": 9748,
+  "Todesfälle": 234
+}
+]
