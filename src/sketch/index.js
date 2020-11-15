@@ -17,8 +17,7 @@ s.preload = () => {
   deutschland = s.loadImage("deutschland.jpg");
 };
 
-function Virus{
-  s.constructor = (x, y, name, bev, infiziert, gestorben) => {
+function Virus(x, y, name, bev, infiziert, gestorben) {
     this.r = infiziert/bev;
     
     this.startX = x;
@@ -32,7 +31,7 @@ function Virus{
     this.gestorben = gestorben;
   }
   
-  s.display = () => {
+ Virus.prototype.display = () => {
     s.translate(this.x, this.y);
     
     s.push();
@@ -59,7 +58,7 @@ function Virus{
   };
   
   
-  s.movement = () => {
+  Virus.prototype.movement = () => {
     var xspeed;
     var yspeed;
     var tempX = this.x;
@@ -82,7 +81,7 @@ function Virus{
     this.x = tempX + xspeed;
     this.y = tempY + yspeed;
   };
-}
+
 
 s.setup = () => {
   s.createCanvas(600, 600, s.WEBGL);
