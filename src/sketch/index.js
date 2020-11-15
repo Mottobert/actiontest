@@ -17,7 +17,7 @@ s.preload = () => {
   deutschland = s.loadImage("deutschland.jpg");
 };
 
-s.class s.Virus{
+function Virus = () => {
   s.constructor = (x, y, name, bev, infiziert, gestorben) => {
     this.r = infiziert/bev;
     
