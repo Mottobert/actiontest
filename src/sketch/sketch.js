@@ -13,6 +13,7 @@ export default function sketch(s) {
     s.createCanvas(width, height, s.WEBGL);
   };
 
+    
   s.draw = () => {
     s.background(200);
     s.scale(0.4); // Scaled to make model fit into canvas
