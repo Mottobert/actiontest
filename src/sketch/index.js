@@ -139,8 +139,10 @@ s.setup = () => {
 
 s.draw = () => {
   s.background(200);
-  s.image(deutschland, -300, -300, 600, 600);
-  
+  s.translate(0, 0, -100);
+  s.image(deutschland, -300, -300, 700, 700);
+  s.translate(0, 0, 100);
+    
   let locX = s.mouseX - s.height / 2;
   let locY = s.mouseY - s.width / 2;
 
