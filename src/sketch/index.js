@@ -17,72 +17,72 @@ s.preload = () => {
   deutschland = s.loadImage("deutschland.jpg");
 };
 
-class Virus{
-  s.constructor = (x, y, name, bev, infiziert, gestorben) => {
-    this.r = infiziert/bev;
-    
-    this.startX = x;
-    this.startY = y;
-    this.x = x;
-    this.y = y;
-    this.model = virusModel;
-    this.name = name;
-    this.bev = bev;
-    this.infiziert = infiziert;
-    this.gestorben = gestorben;
-  }
-  
-  s.display = () => {
-    s.translate(this.x, this.y);
-    
-    s.push();
-    s.scale(this.r * 25);
-    s.rotateX(frameCount * this.r);
-    s.rotateY(frameCount * this.r);
-    
-    var c = map(this.gestorben/this.bev, 0, 0.0002, 255, 40);
-    s.ambientMaterial(c, 0, 0);
-    s.noStroke();
-    s.model(this.model);
-    s.pop();
-    
-    if(highlight){
-      s.push();
-      s.textAlign(CENTER, CENTER);
-      s.textFont(myFont);
-      s.translate(0, 0, 10);
-      s.fill(c, 0, 0);
-      s.text(this.name, 0, this.r * 3000 + 5);
-      s.pop();
-    }
-    s.translate(-this.x, -this.y);
-  };
-  
-  
-  s.movement = () => {
-    var xspeed;
-    var yspeed;
-    var tempX = this.x;
-    var tempY = this.y;
-    var margin = 10;
-    
-    var nF = 80;
-    
-    if(highlight){
-      xspeed = 0;
-      yspeed = 0;
-    } else {
-      xspeed = random(-this.r*nF, this.r*nF);
-      yspeed = random(-this.r*nF, this.r*nF);
-    }
-    
-    tempX = constrain(this.x, this.startX-margin, this.startX+margin);
-    tempY = constrain(this.y, this.startY-margin, this.startY+margin);
-    
-    this.x = tempX + xspeed;
-    this.y = tempY + yspeed;
-  };
-}
+//class Virus{
+//  s.constructor = (x, y, name, bev, infiziert, gestorben) => {
+//    this.r = infiziert/bev;
+//    
+//    this.startX = x;
+//    this.startY = y;
+//    this.x = x;
+//    this.y = y;
+//    this.model = virusModel;
+//    this.name = name;
+//    this.bev = bev;
+//    this.infiziert = infiziert;
+//    this.gestorben = gestorben;
+//  }
+//  
+//  s.display = () => {
+//    s.translate(this.x, this.y);
+//    
+//    s.push();
+//    s.scale(this.r * 25);
+//    s.rotateX(frameCount * this.r);
+//    s.rotateY(frameCount * this.r);
+//    
+//    var c = map(this.gestorben/this.bev, 0, 0.0002, 255, 40);
+//    s.ambientMaterial(c, 0, 0);
+//    s.noStroke();
+//    s.model(this.model);
+//    s.pop();
+//    
+//    if(highlight){
+//      s.push();
+//      s.textAlign(CENTER, CENTER);
+//      s.textFont(myFont);
+//      s.translate(0, 0, 10);
+//      s.fill(c, 0, 0);
+//      s.text(this.name, 0, this.r * 3000 + 5);
+//      s.pop();
+//    }
+//    s.translate(-this.x, -this.y);
+//  };
+//  
+//  
+//  s.movement = () => {
+//    var xspeed;
+//    var yspeed;
+//    var tempX = this.x;
+//    var tempY = this.y;
+//    var margin = 10;
+//    
+//    var nF = 80;
+//    
+//    if(highlight){
+//      xspeed = 0;
+//      yspeed = 0;
+//    } else {
+//      xspeed = random(-this.r*nF, this.r*nF);
+//      yspeed = random(-this.r*nF, this.r*nF);
+//    }
+//    
+//    tempX = constrain(this.x, this.startX-margin, this.startX+margin);
+//    tempY = constrain(this.y, this.startY-margin, this.startY+margin);
+//    
+//    this.x = tempX + xspeed;
+//    this.y = tempY + yspeed;
+//  };
+//}
 
 s.setup = () => {
   s.createCanvas(600, 600, s.WEBGL);
