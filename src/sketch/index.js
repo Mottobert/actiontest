@@ -71,12 +71,12 @@ function Virus(x, y, name, bev, infiziert, gestorben) {
       xspeed = 0;
       yspeed = 0;
     } else {
-      xspeed = random(-this.r*nF, this.r*nF);
-      yspeed = random(-this.r*nF, this.r*nF);
+      xspeed = s.random(-this.r*nF, this.r*nF);
+      yspeed = s.random(-this.r*nF, this.r*nF);
     }
     
-    tempX = constrain(this.x, this.startX-margin, this.startX+margin);
-    tempY = constrain(this.y, this.startY-margin, this.startY+margin);
+    tempX = s.constrain(this.x, this.startX-margin, this.startX+margin);
+    tempY = s.constrain(this.y, this.startY-margin, this.startY+margin);
     
     this.x = tempX + xspeed;
     this.y = tempY + yspeed;
