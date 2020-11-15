@@ -160,10 +160,10 @@ s.draw = () => {
   s.textFont(myFont);
   s.fill(0);
   s.textSize(16);
-  s.text("Virusgöße: Infektionen in Abhängikeit zur Bevölkerung", -350, 350);
-  s.text("Farbe: Verstorbene in Abhängikeit zur Bevölkerung", -350, 370);
-  s.text("Linke Zahl: Infizierte", -350, 390);
-  s.text("Rechte Zahl: Verstorbene", -150, 390);
+  s.text("Virusgöße: Infektionen in Abhängikeit zur Bevölkerung", -350, 340);
+  s.text("Farbe: Verstorbene in Abhängikeit zur Bevölkerung", -350, 360);
+  s.text("Linke Zahl: Infizierte", -350, 380);
+  s.text("Rechte Zahl: Verstorbene", -150, 380);
 
   // Ein Ambient Licht wird zur allgemeinen Aufhellung verwendet und zusätzlich gibt es ein Punktlicht, welches sein Position in Abhängigkeit zur Maus verändert
   let locX = s.mouseX - s.height / 2;
