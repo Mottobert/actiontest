@@ -93,7 +93,7 @@ function Virus(x, y, name, bev, infiziert, gestorben) {
 
 
 s.setup = () => {
-  s.createCanvas(600, 600, s.WEBGL);
+  s.createCanvas(800, 800, s.WEBGL);
   
   // Die verschiedenen Virus-Objekt werden mithilfe der data2.json Datei erstellt und mit deren Inhalt befüllt 
   // Da jedes Virus-Objekt, auf der Karte in dem jeweiligen Bundesland liegen soll, werden die Objekte manuell mit den richtigen Koordinaten versehen    
