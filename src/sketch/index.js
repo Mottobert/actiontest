@@ -80,6 +80,8 @@ function Virus(x, y, name, bev, infiziert, gestorben) {
     
     x = tempX + xspeed;
     y = tempY + yspeed;
+      
+      return [x,y];
   };
 
 
@@ -137,6 +139,7 @@ s.setup = () => {
 
 s.draw = () => {
   s.background(200);
+  s.image(deutschland, -300, -300, 600, 600);
   
   let locX = s.mouseX - s.height / 2;
   let locY = s.mouseY - s.width / 2;
@@ -145,7 +148,10 @@ s.draw = () => {
   s.pointLight(255, 255, 255, locX, locY, 100);
   
   for(let j = 0; j < virus.length; j++){
-    virus[j].movement(virus[j].x, virus[j].y, virus[j].startX, virus[j].startY, virus[j].r);
+    let temp = virus[j].movement(virus[j].x, virus[j].y, virus[j].startX, virus[j].startY, virus[j].r);
+    virus[j].x = temp[0];
+    virus[j].y = temp[1];
+    
     virus[j].display(virus[j].x, virus[j].y, virus[j].r, virus[j].name, virus[j].bev, virus[j].gestorben, virus[j].model);
   }  
 };
