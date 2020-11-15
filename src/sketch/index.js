@@ -26,7 +26,7 @@ s.preload = () => {
 };
 
 class Virus{
-  s.constructor = (x, y, name, bev, infiziert, gestorben) => {
+  constructor = (x, y, name, bev, infiziert, gestorben) => {
     this.r = infiziert/bev;
     
     this.startX = x;
