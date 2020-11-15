@@ -56,7 +56,8 @@ function Virus(x, y, name, bev, infiziert, gestorben) {
       s.translate(0, 0, 10);
       s.fill(c, 0, 0);
       s.text(name, 0, r * 3000 + 5);
-      s.text(infiziert, 0, r * 3000 + 10);
+      s.text(infiziert, -20, r * 3000 + 15);
+      s.text(gestorben, 20, r * 3000 + 15);
       s.pop();
     }
     s.translate(-x, -y);
@@ -147,7 +148,7 @@ s.setup = () => {
 };
 
 s.draw = () => {
-  s.background(200);
+  s.background(255);
     
   // Dei Karte im Hintergrund wird geladen und wird nach hinten geschoben, damit die Virus-Objekte nicht in dem Bild stecken    
   s.translate(0, 0, -150);
