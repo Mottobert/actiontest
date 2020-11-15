@@ -58,7 +58,7 @@ function Virus(x, y, name, bev, infiziert, gestorben) {
   };
   
   
-  Virus.prototype.movement = (x, y) => {
+  Virus.prototype.movement = (x, y, startX, startY, r) => {
     var xspeed;
     var yspeed;
     var tempX = x;
@@ -71,15 +71,15 @@ function Virus(x, y, name, bev, infiziert, gestorben) {
       xspeed = 0;
       yspeed = 0;
     } else {
-      xspeed = s.random(-this.r*nF, this.r*nF);
-      yspeed = s.random(-this.r*nF, this.r*nF);
+      xspeed = s.random(-r*nF, r*nF);
+      yspeed = s.random(-r*nF, r*nF);
     }
     
-    tempX = s.constrain(this.x, this.startX-margin, this.startX+margin);
-    tempY = s.constrain(this.y, this.startY-margin, this.startY+margin);
+    tempX = s.constrain(x, startX-margin, startX+margin);
+    tempY = s.constrain(y, startY-margin, startY+margin);
     
-    this.x = tempX + xspeed;
-    this.y = tempY + yspeed;
+    x = tempX + xspeed;
+    y = tempY + yspeed;
   };
 
 
@@ -145,7 +145,7 @@ s.draw = () => {
   s.pointLight(255, 255, 255, locX, locY, 100);
   
   for(let j = 0; j < virus.length; j++){
-    virus[j].movement(virus[j].x, virus[j].y);
+    virus[j].movement(virus[j].x, virus[j].y, virus[j].startX, virus[j].startY, virus[j].r);
     virus[j].display(virus[j].x, virus[j].y, virus[j].r, virus[j].name, virus[j].bev, virus[j].gestorben, virus[j].model);
   }  
 };
