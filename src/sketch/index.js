@@ -11,10 +11,10 @@ var rows = 4;
 var deutschland;
 
 s.preload = () => {
-  data = s.loadJSON("data2.json");
-  virusModel = s.loadModel("virus.obj", true);
-  myFont = s.loadFont("Helvetica.ttf");
-  deutschland = s.loadImage("deutschland.jpg");
+  data = s.loadJSON("assets/data2.json");
+  virusModel = s.loadModel("assets/virus.obj", true);
+  myFont = s.loadFont("assets/Helvetica.ttf");
+  deutschland = s.loadImage("assets/deutschland.jpg");
 };
 
 function Virus(x, y, name, bev, infiziert, gestorben) {
