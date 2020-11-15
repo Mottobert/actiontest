@@ -19,14 +19,14 @@ var rows = 4;
 var deutschland;
 
 s.preload = () => {
-  data = loadJSON("data2.json");
-  virusModel = loadModel("virus.obj", true);
-  myFont = loadFont("Helvetica.ttf");
-  deutschland = loadImage("deutschland.jpg");
+  data = s.loadJSON("data2.json");
+  virusModel = s.loadModel("virus.obj", true);
+  myFont = s.loadFont("Helvetica.ttf");
+  deutschland = s.loadImage("deutschland.jpg");
 };
 
-s.class Virus{
-  s.constructor(x, y, name, bev, infiziert, gestorben){
+s.class Virus = () => {
+  s.constructor = (x, y, name, bev, infiziert, gestorben) => {
     this.r = infiziert/bev;
     
     this.startX = x;
