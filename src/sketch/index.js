@@ -162,6 +162,8 @@ s.draw = () => {
   s.textSize(16);
   s.text("Virusgöße: Infektionen in Abhängikeit zur Bevölkerung", -350, 350);
   s.text("Farbe: Verstorbene in Abhängikeit zur Bevölkerung", -350, 370);
+  s.text("Linke Zahl: Infizierte", -350, 390);
+  s.text("Rechte Zahl: Verstorbene", -150, 390);
 
   // Ein Ambient Licht wird zur allgemeinen Aufhellung verwendet und zusätzlich gibt es ein Punktlicht, welches sein Position in Abhängigkeit zur Maus verändert
   let locX = s.mouseX - s.height / 2;
