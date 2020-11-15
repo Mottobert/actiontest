@@ -155,8 +155,8 @@ s.draw = () => {
   s.background(200);
   //image(deutschland, -300, -300, 600, 600);
   
-  let locX = s.mouseX - height / 2;
-  let locY = s.mouseY - width / 2;
+  let locX = s.mouseX - s.height / 2;
+  let locY = s.mouseY - s.width / 2;
 
   s.ambientLight(100, 100, 100);
   s.pointLight(255, 255, 255, locX, locY, 100);
