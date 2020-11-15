@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 export default function sketch(s) {
 
 var data;
@@ -10,12 +18,12 @@ var cols = 4;
 var rows = 4;
 var deutschland;
 
-s.preload(){
+s.preload = () => {
   data = loadJSON("data2.json");
   virusModel = loadModel("virus.obj", true);
   myFont = loadFont("Helvetica.ttf");
   deutschland = loadImage("deutschland.jpg");
-}
+};
 
 s.Virus{
   s.constructor(x, y, name, bev, infiziert, gestorben){
@@ -32,7 +40,7 @@ s.Virus{
     this.gestorben = gestorben;
   }
   
-  s.display(){
+  s.display = () => {
     s.translate(this.x, this.y);
     
     s.push();
@@ -56,10 +64,10 @@ s.Virus{
       s.pop();
     }
     s.translate(-this.x, -this.y);
-  }
+  };
   
   
-  s.movement(){
+  s.movement = () => {
     var xspeed;
     var yspeed;
     var tempX = this.x;
@@ -81,10 +89,10 @@ s.Virus{
     
     this.x = tempX + xspeed;
     this.y = tempY + yspeed;
-  }
+  };
 }
 
-s.setup() {
+s.setup = () => {
   s.createCanvas(600, 600, s.WEBGL);
   
   //var count = Object.keys(data).length;
@@ -150,9 +158,9 @@ s.setup() {
   
   index = 15;
   virus[index] = new Virus(25, 20, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
-}
+};
 
-s.draw() {
+s.draw = () => {
   s.background(200);
   //image(deutschland, -300, -300, 600, 600);
   
@@ -166,14 +174,14 @@ s.draw() {
     virus[j].movement();
     virus[j].display();
   }  
-}
+};
 
-s.mousePressed(){
+s.mousePressed = () => {
   highlight = true;
-}
+};
 
-s.mouseReleased(){
+s.mouseReleased = () => {
   highlight = false;
-}
+};
     
-}
+};
