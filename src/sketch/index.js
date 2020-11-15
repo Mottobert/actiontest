@@ -95,13 +95,13 @@ s.setup = () => {
   virus[index] = new Virus(60, 150, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
   
    index = 2;
-  virus[index] = new Virus(120, -100, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  virus[index] = new Virus(130, -110, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
   
   index = 3;
   virus[index] = new Virus(150, -50, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
   
   index = 4;
-  virus[index] = new Virus(-60, -140, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  virus[index] = new Virus(-80, -140, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
   
   index = 5;
   virus[index] = new Virus(-20, -160, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
@@ -119,7 +119,7 @@ s.setup = () => {
   virus[index] = new Virus(-120, -30, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
   
   index = 10;
-  virus[index] = new Virus(-140, 80, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  virus[index] = new Virus(-140, 60, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
   
   index = 11;
   virus[index] = new Virus(-150, 120, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
