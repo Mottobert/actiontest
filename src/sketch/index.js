@@ -99,7 +99,7 @@ s.setup = () => {
   // Die verschiedenen Virus-Objekt werden mithilfe der data2.json Datei erstellt und mit deren Inhalt befüllt 
   // Da jedes Virus-Objekt, auf der Karte in dem jeweiligen Bundesland liegen soll, werden die Objekte manuell mit den richtigen Koordinaten versehen 
     
-  for(int i = 0; i < data.length; i++){
+  for(let i = 0; i < data.length; i++){
       virus[index] = new Virus(data[i].x, data[i].y, data[i].Bundesland, data[i].Einwohner, data[i].Infektionen, data[i].Todesfälle);
   }
     
