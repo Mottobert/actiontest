@@ -99,57 +99,57 @@ s.setup = () => {
   // Die verschiedenen Virus-Objekt werden mithilfe der data2.json Datei erstellt und mit deren Inhalt befüllt 
   // Da jedes Virus-Objekt, auf der Karte in dem jeweiligen Bundesland liegen soll, werden die Objekte manuell mit den richtigen Koordinaten versehen 
     
-  for(let i = 0; i < data.length; i++){
-      virus[index] = new Virus(data[i].x, data[i].y, data[i].Bundesland, data[i].Einwohner, data[i].Infektionen, data[i].Todesfälle);
-  }
+  //for(let i = 0; i < data.length; i++){
+  //    virus[index] = new Virus(data[i].x, data[i].y, data[i].Bundesland, data[i].Einwohner, data[i].Infektionen, data[i].Todesfälle);
+  //}
     
-  //var index = 0;
-  //virus[index] = new Virus(-60, 170, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
-  //
-  //index = 1;
-  //virus[index] = new Virus(70, 160, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
-  //
-  //index = 2;
-  //virus[index] = new Virus(130, -130, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
-  //
-  //index = 3;
-  //virus[index] = new Virus(150, -50, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
-  //
-  //index = 4;
-  //virus[index] = new Virus(-90, -140, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
-  //
-  //index = 5;
-  //virus[index] = new Virus(-20, -160, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
-  //
-  //index = 6;
-  //virus[index] = new Virus(-55, 30, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
-  //
-  //index = 7;
-  //virus[index] = new Virus(90, -190, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
-  //
-  //index = 8;
-  //virus[index] = new Virus(-20, -90, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
-  //
-  //index = 9;
-  //virus[index] = new Virus(-130, -30, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
-  //
-  //index = 10;
-  //virus[index] = new Virus(-130, 50, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
-  //
-  //index = 11;
-  //virus[index] = new Virus(-150, 120, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
-  //
-  //index = 12;
-  //virus[index] = new Virus(130, 10, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
-  //
-  //index = 13;
-  //virus[index] = new Virus(50, -50, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
-  //
-  //index = 14;
-  //virus[index] = new Virus(-40, -230, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
-  //
-  //index = 15;
-  //virus[index] = new Virus(25, 20, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  var index = 0;
+  virus[index] = new Virus(-60, 170, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  
+  index = 1;
+  virus[index] = new Virus(70, 160, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  
+  index = 2;
+  virus[index] = new Virus(130, -130, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  
+  index = 3;
+  virus[index] = new Virus(150, -50, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  
+  index = 4;
+  virus[index] = new Virus(-90, -140, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  
+  index = 5;
+  virus[index] = new Virus(-20, -160, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  
+  index = 6;
+  virus[index] = new Virus(-55, 30, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  
+  index = 7;
+  virus[index] = new Virus(90, -190, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  
+  index = 8;
+  virus[index] = new Virus(-20, -90, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  
+  index = 9;
+  virus[index] = new Virus(-130, -30, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  
+  index = 10;
+  virus[index] = new Virus(-130, 50, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  
+  index = 11;
+  virus[index] = new Virus(-150, 120, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  
+  index = 12;
+  virus[index] = new Virus(130, 10, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  
+  index = 13;
+  virus[index] = new Virus(50, -50, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  
+  index = 14;
+  virus[index] = new Virus(-40, -230, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
+  
+  index = 15;
+  virus[index] = new Virus(25, 20, data[index].Bundesland, data[index].Einwohner, data[index].Infektionen, data[index].Todesfälle);
 };
 
 s.draw = () => {
