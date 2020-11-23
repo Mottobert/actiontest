@@ -102,8 +102,6 @@ s.setup = () => {
   for(let i = 0; i < 16; i++){
       virus[i] = new Virus(data[i].x, data[i].y, data[i].Bundesland, data[i].Einwohner, data[i].Infektionen, data[i].Todesfälle);
   }
-    
-  console.log(data.length);
 };
 
 s.draw = () => {
