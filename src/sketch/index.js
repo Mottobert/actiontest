@@ -100,7 +100,7 @@ s.setup = () => {
   // Da jedes Virus-Objekt, auf der Karte in dem jeweiligen Bundesland liegen soll, werden die Objekte manuell mit den richtigen Koordinaten versehen 
     
   for(let i = 0; i < 16; i++){
-      virus[index] = new Virus(data[i].x, data[i].y, data[i].Bundesland, data[i].Einwohner, data[i].Infektionen, data[i].Todesfälle);
+      virus[i] = new Virus(data[i].x, data[i].y, data[i].Bundesland, data[i].Einwohner, data[i].Infektionen, data[i].Todesfälle);
   }
     
   //var index = 0;
